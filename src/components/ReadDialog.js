@@ -184,7 +184,7 @@ const ModalTitleUser = styled.div`
   @media only screen and (max-width: 540px) {
     // small 크기 //
     > div > h1 {
-      font-size: 27px;
+      font-size: 20px;
     }
     > div > span {
       justify-content: center;
