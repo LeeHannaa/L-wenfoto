@@ -6,7 +6,7 @@
 </p>
 
 ## 🖥️ 배포 주소
-[Löwenfoto 방문하기📂](https://sparkly-gumdrop-524287.netlify.app/)
+[Löwenfoto 방문하기📂](https://master--l-wenfoto.netlify.app/)
 
 ## 🕰️ 개발 기간
 * 24.01.26일 ~ 24.02.01일
