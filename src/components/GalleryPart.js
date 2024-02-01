@@ -27,6 +27,7 @@ function GalleryPart() {
   const handleModalClose = () => {
     setIsOpen(false);
   };
+
   // ========== Add Form
   const [isAddOpen, setIsAddOpen] = useState(false);
   const handleAddForm = () => {
@@ -40,6 +41,8 @@ function GalleryPart() {
   // ===========
   const [postId, setPostId] = useState();
   const [isDeleteOpen, setIsDeleteOpen] = useState(false);
+
+  // eslint-disable-next-line
   const handleClickDelete = () => {
     getCard();
     setIsDeleteOpen(!isDeleteOpen);
@@ -121,7 +124,7 @@ function GalleryPart() {
       {isOpen && (
         <div>
           <ReadDialog
-            open={isOpen}
+            // open={isOpen}
             onClose={handleModalClose}
             item={selected}
           />

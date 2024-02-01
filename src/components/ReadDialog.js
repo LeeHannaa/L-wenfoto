@@ -244,12 +244,17 @@ const ModalFooter = styled.div`
   border-radius: 10px;
 `;
 
-function ReadDialog({ open, onClose, item }) {
+function ReadDialog({ onClose, item }) {
   useEffect(() => {
+    console.log(item.createdAt);
     document.body.style = `margin:0`;
     document.body.style = `overflow: hidden`;
     return () => (document.body.style = `overflow: auto`);
+    // eslint-disable-next-line
   }, []);
+
+  const createDate = new Date(item.createdAt);
+
   return (
     <div className="modal">
       <Modal>
@@ -268,7 +273,9 @@ function ReadDialog({ open, onClose, item }) {
                 </div>
                 <div>
                   <span>
-                    <em>{item.createdAt.slice(0, 10)}</em>
+                    <em>{`${createDate.getFullYear()}-${
+                      createDate.getMonth() + 1
+                    }-${createDate.getDate()}`}</em>
                     <h3>{item?.owner_name}</h3>
                   </span>
                 </div>
